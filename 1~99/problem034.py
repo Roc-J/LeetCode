@@ -18,18 +18,21 @@ class Solution(object):
         #     result.append(nums.index(target))
         #     result.append(len(nums) - nums[::-1].index(target) - 1)
         #     return result
-        result = []
-        for i in range(len(nums)):
-            if nums[i] < target:
-                pass
-            elif nums[i] == target:
-                result.append(i)
-            else:
-                break
-        if len(result) > 0:
-            return [min(result), max(result)]
-        else:
-            return [-1, -1]
+
+        # result = []
+        # for i in range(len(nums)):
+        #     if nums[i] < target:
+        #         pass
+        #     elif nums[i] == target:
+        #         result.append(i)
+        #     else:
+        #         break
+        # if len(result) > 0:
+        #     return [min(result), max(result)]
+        # else:
+        #     return [-1, -1]
+
+        def extreme_insertion_index
 
 if __name__ == '__main__':
     print(Solution().searchRange([5, 7, 7, 8, 8, 10], 110))
